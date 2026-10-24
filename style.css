@@ -1,0 +1,98 @@
+body {
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.converter-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+
+h2 {
+  color: #333333;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #b2bec3;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* При клике рамка инпута становится мягкого голубого цвета */
+input:focus {
+  border-color: #0984e3;
+  box-shadow: 0 0 5px rgba(9, 132, 227, 0.3);
+}
+
+.select-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+select {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #b2bec3;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+select:focus {
+  border-color: #0984e3;
+}
+
+button {
+  width: 100%;
+  padding: 11px;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(9, 132, 227, 0.3);
+  transition: 0.3s;
+}
+
+/* Красивый эффект наведения на кнопку */
+button:hover {
+  background-color: #74b9ff;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2d3436;
+}
+
